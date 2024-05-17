@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regra do jogo</title>
+</head>
+<body>
+    <header>
+        <h1>Pedra papel e tesoura</h1>
+        <img src="./assets/img/papel_pedra_tesoura.jpg" alt="imagem mostrando a representação das figuras">
+    </header>
+
+    <div class="barra-pontuacao">
+        <div id="label-usuario" class="pontuacao">Player</div>
+        <div id="label-computador" class="pontuacao">Computador</div>
+        <span id="pontuacao-usuario">0</span>:<span id="pontuacao-computador">0</span>
+    </div>
+
+    <div class="resultado">
+        <p>Tesoura ganhou do papel. Você ganhou!</p>
+    </div>
+
+    <div class="escolha">
+        <div class="escolha" id="papel">
+            <img src="./assets/img/papel.jpg" alt="desenho de um papel">
+        </div>
+        <div class="escolha" id="pedra">
+            <img src="./assets/img/pedra.avif" alt="desenho de uma pedra">
+        </div>
+        <div class="escolha" id="tesoura">
+            <img src="./assets/img/tesoura.jpg" alt="desenho de uma tesoura">
+        </div>
+    </div>
+
+    <div id="modal">
+        <div id="modal_card">
+            <h2>Bem vindo ao jogo pedra, papel e tesoura. Para relembrar a sua infância</h2>
+            <p>Regras do jogo:</p>
+            <p>1. Clique em umas das 3 imagens para duelar com o computador;</p>
+            <p>2. Após clicar em uma das imagens, será apresentado quem ganhou;</p>
+            <p>3. Por fim quem ganhar aparecerá no painel o ponto da rodada.</p>
+            <button id="iniciar-jogo" onclick="">Iniciar batalha</button>
+        </div>
+    </div>
+</body>
+</html>
